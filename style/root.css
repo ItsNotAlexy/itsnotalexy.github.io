@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+html body {
+    font-family: 'Alexandria', serif;
+    font-size: 1.2rem;
+    background-color: #121212;
+}
