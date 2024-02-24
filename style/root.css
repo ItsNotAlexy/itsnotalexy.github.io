@@ -1,11 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&display=swap');
-
-html {
-    scroll-behavior: smooth;
+:root {
+    --white: #FFFFFF;
+    --light-gray: #F2F1F2;
+    --dark-black: #040404;
+    --purple: #95A1F9;
+    --dark-purple: #6D7BC9;
 }
 
-html body {
-    font-family: 'Alexandria', serif;
-    font-size: 1.2rem;
-    background-color: #121212;
+body {
+    font-family: "Roboto Mono", monospace !important;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--dark-black) !important;
+    color: var(--white) !important;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    background-color: var(--dark-black);
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--white);
+    word-wrap: break-word;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--light-gray);
+    word-wrap: break-word;
+}
+
+.section {
+    padding: 50px 0;
+    background-color: var(--dark-black);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--white);
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--light-gray);
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.outline-btn {
+    font-family: "Roboto Mono", monospace !important;
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--white);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.outline-btn a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.outline-btn:hover {
+    background-color: var(--dark-purple);
+    color: white;
+}
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cards-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px var(--white);
+    text-align: center;
+    width: 300px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--white);
+    word-wrap: break-word;
+}
+
+.card-subtitle,
+.card-content {
+    font-size: 1rem;
+    color: var(--light-gray);
+    word-wrap: break-word;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    .outline-btn {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+    .card {
+        width: 100%;
+    }
+    .section {
+        padding: 30px 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .section-subtitle {
+        font-size: 1.8rem;
+    }
+    .outline-btn {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
 }
