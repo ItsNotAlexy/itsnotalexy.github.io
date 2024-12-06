@@ -1,4 +1,5 @@
 :root {
+	--font-family: "Roboto Mono", monospace;
 	--white: #FFFFFF;
 	--light-gray: #F2F1F2;
 	--dark-black: #040404;
@@ -7,7 +8,7 @@
 }
 
 body, html {
-	font-family: "Roboto Mono", monospace !important;
+	font-family: var(--font-family) !important;
 	font-size: 16px;
 	line-height: 1.5;
 	background-color: var(--dark-black) !important;
@@ -36,7 +37,7 @@ body, html {
 }
 
 .continue-btn {
-    font-family: "Roboto Mono", monospace !important;
+    font-family: var(--font-family) !important;
 	position: absolute;
 	bottom: 20%;
 	padding: 15px 50px;
@@ -141,7 +142,7 @@ main.visible {
 }
 
 .outline-btn {
-	font-family: "Roboto Mono", monospace !important;
+	font-family: var(--font-family) !important;
 	border: 2px solid var(--purple);
 	border-radius: 5px;
 	background-color: transparent;
